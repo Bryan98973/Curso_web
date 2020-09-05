@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pagina donde explico donde se estructura una etiqueta HTML"
+    />
+    <title>Sintaxis de etiqueta</title>
+    <style>
+      body {
+        font-family: Helvetica;
+        color: ;
+      }
+      h1 {
+        border: 1px blue solid;
+        text-align: center;
+      }
+      #seccion_etiqueta {
+        border: 2px red solid;
+      }
+      .parrafo{
+        text-align:justify;
+        line-height: 1.5;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="seccion_etiqueta">
+      <h1>Las etiquetas y los contenidos</h1>
+      <p class="parrafo">Cada elemento HTML está formado por varias partes constitutivas.</p>
+      <p class="parrafo">
+        La primera parte es la etiqueta de apertura. Esta etiqueta empieza con
+        el carácter < y se sigue inmediatamente después por el nombre del
+        elemento. Termina con el carácter >. El elemento que permite insertar un
+        párrafo de texto se llama p, la sintaxis de su etiqueta de apertura es
+        la siguiente:
+      </p>
+      <p>
+        La segunda parte afecta a los contenidos textuales. Es decir, los
+        elementos HTML que contienen texto, como los títulos, párrafos, citas,
+        etc. El texto se escribe de manera normal, sin ninguna etiqueta
+        específica.
+      </p>
+      <p>
+        La mayor parte de los elementos HTML tienen una etiqueta de cierre. La
+        sintaxis retoma el principio de la etiqueta de apertura, pero además con
+        el carácter /, que precede al nombre del elemento. Este carácter indica
+        el final del elemento. Si retomamos nuestro ejemplo de párrafo, a
+        continuación se muestra la etiqueta de cierre:
+      </p>
+      <p>
+        Este es un ejemplo completo para el elemento HTML, que inserta un
+        párrafo:
+      </p>
+      <p>
+        Es importante observar que algunos elementos HTML sin contenido textual
+        o sin elementos anidados lógicamente no tienen etiqueta de cierre.
+        Tomemos como ejemplo el elemento, que permite insertar una línea
+        horizontal de separación. No hay contenido textual; por lo tanto, no
+        tenemos etiqueta de cierre. Sucede lo mismo con el elemento, que permite
+        insertar una imagen. En este caso, la etiqueta de apertura contiene un
+        autocierre.
+      </p>
+    </div>
+  </body>
+</html>
