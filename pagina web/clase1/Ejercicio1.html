@@ -8,31 +8,15 @@
       content="Pagina donde explico donde se estructura una etiqueta HTML"
     />
     <title>Sintaxis de etiqueta</title>
-    <style>
-      body {
-        font-family: Helvetica;
-        color:peru;
-      }
-      h1 {
-        border: 1px blue solid;
-        text-align: center;
-        color: steelblue;
-      }
-      #seccion_etiqueta {
-        border: 10px red solid;
-        padding: 20px;
-      }
-      .parrafo{
-        text-align:justify;
-        line-height: 1.5;
-        font-size: 18px;
-      }
-    </style>
   </head>
+  <link rel="stylesheet" href="estilos.css">
   <body>
     <div id="seccion_etiqueta">
       <h1>Las etiquetas y los contenidos</h1>
-      <p class="parrafo">Cada elemento HTML está formado por varias partes constitutivas.</p>
+      <p class="parrafo">
+        Cada elemento <span class="texto_azul">HTML</span> está formado por
+        varias partes constitutivas.
+      </p>
       <p class="parrafo">
         La primera parte es la etiqueta de apertura. Esta etiqueta empieza con
         el carácter < y se sigue inmediatamente después por el nombre del
@@ -42,30 +26,32 @@
       </p>
       <p>
         La segunda parte afecta a los contenidos textuales. Es decir, los
-        elementos HTML que contienen texto, como los títulos, párrafos, citas,
-        etc. El texto se escribe de manera normal, sin ninguna etiqueta
-        específica.
+        elementos <span class="texto_azul">HTML</span> que contienen texto, como
+        los títulos, párrafos, citas, etc. El texto se escribe de manera normal,
+        sin ninguna etiqueta específica.
       </p>
       <p>
-        La mayor parte de los elementos HTML tienen una etiqueta de cierre. La
+        La mayor parte de los elementos
+        <span class="texto_azul">HTML</span> tienen una etiqueta de cierre. La
         sintaxis retoma el principio de la etiqueta de apertura, pero además con
         el carácter /, que precede al nombre del elemento. Este carácter indica
         el final del elemento. Si retomamos nuestro ejemplo de párrafo, a
         continuación se muestra la etiqueta de cierre:
       </p>
       <p>
-        Este es un ejemplo completo para el elemento HTML, que inserta un
-        párrafo:
+        Este es un ejemplo completo para el elemento
+        <span class="texto_azul">HTML</span>, que inserta un párrafo:
       </p>
       <p>
-        Es importante observar que algunos elementos HTML sin contenido textual
-        o sin elementos anidados lógicamente no tienen etiqueta de cierre.
-        Tomemos como ejemplo el elemento, que permite insertar una línea
-        horizontal de separación. No hay contenido textual; por lo tanto, no
-        tenemos etiqueta de cierre. Sucede lo mismo con el elemento, que permite
-        insertar una imagen. En este caso, la etiqueta de apertura contiene un
-        autocierre.
+        Es importante observar que algunos elementos
+        <span class="texto_azul">HTML</span> sin contenido textual o sin
+        elementos anidados lógicamente no tienen etiqueta de cierre. Tomemos
+        como ejemplo el elemento, que permite insertar una línea horizontal de
+        separación. No hay contenido textual; por lo tanto, no tenemos etiqueta
+        de cierre. Sucede lo mismo con el elemento, que permite insertar una
+        imagen. En este caso, la etiqueta de apertura contiene un autocierre.
       </p>
+      <h2>Ejercicio 1</h2>
     </div>
   </body>
 </html>

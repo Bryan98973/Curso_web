@@ -1,0 +1,31 @@
+body {
+  font-size: 16px;
+  font-family: Helvetica;
+}
+#seccion_etiqueta {
+  margin: auto;
+  width: 1000px;
+  border: 1px red solid;
+  padding: 15px;
+}
+h1 {
+  /*border: 1px green solid;*/
+  text-align: center;
+  color: #bf3e0f;
+  background-color: #e3e3e3;
+}
+.parrafo {
+  text-align: justify;
+  line-height: 1.5;
+  font-size: 16px;
+}
+.texto_azul {
+  font-weight: bold;
+  color: #15a015;
+  font-size: 18px;
+  text-decoration: underline;
+  font-style: italic;
+}
+.negritas{
+  font-weight: bold;
+}
