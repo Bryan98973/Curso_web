@@ -12,7 +12,10 @@ h1 {
   /*border: 1px green solid;*/
   text-align: center;
   color: #bf3e0f;
-  background-color: #e3e3e3;
+  /*background-color: #e3e3e3;*/
+}
+#contenedor_menu {
+  background: #e3e3e3;
 }
 .parrafo {
   text-align: justify;
@@ -26,6 +29,30 @@ h1 {
   text-decoration: underline;
   font-style: italic;
 }
-.negritas{
+.negritas {
   font-weight: bold;
+}
+/* css del ejercicio 2 */
+ul {
+  /*border:1px solid;*/
+  padding-left: 60px; /* sirve para dar mas espacio a las viñetas(sangrias) */
+}
+li {
+  text-align: justify;
+  line-height: 1.5;
+  /*border: 1px solid;*/
+}
+.naranja {
+  color: #e77c0d;
+  font-weight: bold;
+}
+#logo_css {
+  width: 200px;
+  display: block;
+  margin: auto;
+}
+#contenedor_logo_html img {
+  width: 175px;
+  display: block;
+  margin: auto;
 }
