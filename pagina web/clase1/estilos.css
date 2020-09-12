@@ -16,6 +16,28 @@ h1 {
 }
 #contenedor_menu {
   background: #e3e3e3;
+  padding: 20px;
+  text-align: center;
+}
+#contenedor_menu a {
+  /*border: 1px red solid;*/
+  color: white;
+  text-decoration-line: none; /* quitar subrayado */
+  text-transform: uppercase; /* letras mayusculas */
+  background-color: #0d78e7;
+  /*padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom:10px ;*/
+
+  padding: 10px 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: all 800ms;
+}
+#contenedor_menu a:hover{
+  background-color: black;
+  padding: 10px 60px;
 }
 .parrafo {
   text-align: justify;
@@ -32,7 +54,12 @@ h1 {
 .negritas {
   font-weight: bold;
 }
+
 /* css del ejercicio 2 */
+
+ol {
+  padding-left: 20px;
+}
 ul {
   /*border:1px solid;*/
   padding-left: 60px; /* sirve para dar mas espacio a las viñetas(sangrias) */
@@ -55,4 +82,18 @@ li {
   width: 175px;
   display: block;
   margin: auto;
+}
+iframe{
+  width: 1000px;
+  border: 10px orange solid;
+}
+table, tr, td {
+  border: 1px solid;
+  border-spacing: 5px;
+}
+tr, td {
+  padding: 5px 80px 25px 5px;
+}
+tr {
+  vertical-align: top;
 }

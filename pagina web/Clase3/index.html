@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de las tablas HTML</title>
+    <meta name="description" content="Pagina para crear tablas html" />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <h1>Ejemplos de tablas HTML</h1>
+    <br />
+    <h2>TABLA 1</h2>
+    <table id="tabla1">
+      <tr>
+        <td class="cabecera_tabla">Nombre</td>
+        <td class="cabecera_tabla">Nombre</td>
+        <td id="edad" class="cabecera_tabla">Edad</td>
+        <td class="cabecera_tabla">Curso</td>
+      </tr>
+      <tr>
+        <td>Eduardo</td>
+        <td>Soria gomez</td>
+        <td>12</td>
+        <td>Primero</td>
+      </tr>
+      <tr class="tercera">
+        <td>Carlos</td>
+        <td>Perez Diaz</td>
+        <td>14</td>
+        <td>Tercer</td>
+      </tr>
+      <tr>
+        <td>Martin</td>
+        <td>Pereira</td>
+        <td>11</td>
+        <td>&sp</td>
+      </tr>
+      <tr class="tercera">
+        <td>Juan</td>
+        <td>Perez Lopez</td>
+        <td>11</td>
+        <td>&sp</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <br />
+    <h2>TABLA 2</h2>
+    <table id="tabla2">
+      <tr class="datos">
+        <td colspan="3" id="titulo">Calendario de cursos cecati</td>
+      </tr>
+      <tr class="negritas">
+        <td>Sabado</td>
+        <td class="azul">Domingo</td>
+        <td>Lunes</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Curso HTML y Curso photoshop</td>
+        <td class="azul">Curso CSS</td>
+        <td>Curso Javascript</td>
+      </tr>
+      <tr>
+        <td class="azul">Curso Flash</td>
+        <td>Curso Tinkercad 3D</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+    <h2>TABLA 3</h2>
+    <br />
+    <table id="tabla3">
+      <!-- fila 1 -->
+      <tr>
+        <td colspan="4" class="cabecera_tabla">
+          Diferencias entre el perro y el hombre
+        </td>
+      </tr>
+      <!-- fila 2 -->
+      <tr class="negritas gris">
+        <td rowspan="2">Diferencias</td>
+        <td colspan="2">Perro</td>
+        <td rowspan="2">Hombre</td>
+      </tr>
+      <!-- fila 3 -->
+      <tr class="negritas gris">
+        <td>Pequeño</td>
+        <td>Grande</td>
+      </tr>
+      <!--  fila 4 -->
+      <tr>
+        <td>Duracion de Crecimiento</td>
+        <td>1o meses</td>
+        <td id="rojo">18 a 24 meses</td>
+        <td>16 años</td>
+      </tr>
+      <!-- fila 5 -->
+      <tr>
+        <td>Tiempo de Gestacion</td>
+        <td colspan="2">58 a 63 días</td>
+        <td>9 meses</td>
+      </tr>
+      <!-- fila 6 -->
+      <tr>
+        <td>Duración del pelo/cabello</td>
+        <td colspan="2">1 año</td>
+        <td>2- 7 años</td>
+      </tr>
+    </table>
+    <br />
+    <br />
+  </body>
+</html>
