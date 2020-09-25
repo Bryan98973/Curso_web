@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  /* sirve para que el contenido y el padding se modifique de acuerdo al margen */
+}
+body {
+  font-family: Helvetica;
+  font-size: 16px;
+  color: #333;
+}
+h1 {
+  text-align: center;
+}
+h4 {
+  color: red;
+  padding: 10px 0px;
+}
+h2 {
+  letter-spacing: 2px;
+  padding-bottom: 15px;
+  line-height: 34px;
+}
+.parrafo {
+  color: #a9a9a9;
+}
+.contenedor_info {
+  border: 1px red solid;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.info1 {
+  border: 1px blue solid;
+  padding: 15px;
+  max-width: 550px;
+}
+.btn_negro {
+  background-color: #333;
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  display: inline-block;
+  /* sirve para que haga caso al margin-top */
+}
+.iconos{
+  border: 1px red solid;
+  padding: 15px;
+  max-width: 550px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.iconos i {
+  font-size: 50px;
+  color: red;
+  padding-bottom: 20px;
+}
+h3 {
+  padding-bottom: 15px;
+}
+.caja {
+  padding: 10px;
+  max-width:250px;
+  border: 1px green solid;
+  margin-bottom: 15px;
+}
