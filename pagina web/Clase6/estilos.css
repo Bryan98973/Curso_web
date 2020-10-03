@@ -1,7 +1,8 @@
 * {
+  /* sirve para aplicar a todo */
   margin: 0;
   padding: 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
   /* sirve para que el contenido y el padding se modifique de acuerdo al margen */
 }
 body {
@@ -37,18 +38,18 @@ h2 {
 }
 .info1 {
   border: 1px blue solid;
-  padding: 15px 10px;
+  padding: 50px 15px;
   max-width: 550px;
 }
 .btn_negro {
   background-color: #333;
   color: white;
-  padding: 10px 30px;
+  padding: 10px 40px;
   text-decoration: none;
   display: inline-block;
   /* sirve para que haga caso al margin-top */
 }
-.iconos{
+.iconos {
   border: 1px red solid;
   padding: 15px;
   max-width: 550px;
@@ -68,7 +69,55 @@ h3 {
 }
 .caja {
   padding: 10px;
-  max-width:250px;
+  max-width: 250px;
   border: 1px green solid;
   margin-bottom: 15px;
+}
+@media screen and (max-width: 940px) {
+  .contenedor_info {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .info1 {
+    padding: 30px 15px;
+    max-width: 95%;
+  }
+  .iconos {
+    max-width: 95%;
+    flex-wrap: nowrap;
+  }
+  .iconos 1 {
+    font-size: 40px;
+  }
+  .caja {
+    text-align: center;
+  }
+  .caja p {
+    text-align: justify;
+  }
+}
+@media screen and (max-width:690px){
+  .iconos{
+    max-width: 95%;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 580px){
+  h1 {
+    line-height: 34px;
+  }
+  .iconos {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    padding: 0px;
+  }
+  .caja {
+    max-width: 100%;
+  }
+  .caja p{
+    font-size: 14px;
+  }
 }
