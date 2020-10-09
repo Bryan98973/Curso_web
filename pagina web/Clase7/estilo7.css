@@ -7,6 +7,7 @@ body {
   font-family: helvetica;
   font-size: 16px;
   color: #333;
+  line-height: 24px;
 }
 .ancho {
   max-width: 1200px;
@@ -28,14 +29,52 @@ nav {
   align-items: center;
 }
 nav a {
+  display: inline-block;
   text-decoration: none;
-  color: white;
-  background-color: #28557a;
+  color: #28557a;
+  background-color: transparent;
+  border: 2px #28557a solid;
   padding: 10px 30px;
   border-radius: 5px;
   transition: all 0.5s;
 }
 nav a:hover {
-  color: #28557a;
-  background-color: transparent;
+  color: white;
+  background-color: #28557a;
+}
+#contenedor {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  /*flex-wrap: wrap;*/
+}
+#contenedor a{
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 5px;
+  display: inline-block;
+}
+#contenedor h1{
+  font-size: 25px;
+  color: #cc9000;
+  padding: 15px 0px;
+}
+#contenedor h1{
+  padding-bottom: 20px;
+}
+footer {
+  background-color: #28557a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+  padding: 35px 10px;
 }
