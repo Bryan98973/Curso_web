@@ -9,6 +9,10 @@
     />
     <title>Ejemplo Menu Responsive</title>
     <link rel="stylesheet" href="estilo7.css" />
+    <script
+      src="https://kit.fontawesome.com/66f5e943e2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="ancho">
@@ -16,6 +20,11 @@
         <img src="images/pullrequest-logo.svg" alt="" />
       </div>
     </header>
+    <div class="ancho" id="contenedor_menu">
+      <a href="#" id="menu">
+        <i class="fas fa-bars fa-1x"></i>
+      </a>
+    </div>
     <nav class="ancho">
       <a href="#">Inicio</a>
       <a href="#">Empresa</a>
@@ -24,8 +33,8 @@
       <a href="#">Ubicacion</a>
       <a href="#">Contactanos</a>
     </nav>
-    <section class="ancho" id="contenedor"> 
-      <article>
+    <section class="ancho" id="contenedor">
+      <article class="info">
         <h1>Creacion de Página Web</h1>
         <h3>Curso Basico de HTML y CSS</h3>
         <p>
@@ -35,14 +44,27 @@
           dignissimos aut? Sunt, veniam!
         </p>
         <br />
-        <a href="#">Leer mas</a>
+        <a href="#" id="leer">Leer mas</a>
       </article>
-      <div>
-        <img src='http://lorempixel.com/g/300/300' alt='Foto Aleatoria'/>
+      <div class="foto">
+        <img src="http://lorempixel.com/g/300/300" alt="Foto Aleatoria" />
       </div>
     </section>
-    <Footer class="ancho">
+    <footer class="ancho">
       <a href="#">@BrayanRodriguez</a>
-    </Footer>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      //SCRIPT PARA EL MENU DESPLEGABLE
+      $("#menu").click(function(){
+        $("nav").slideToggle();
+      });
+    </script>
+    <script>
+      //SCRIPT PARA EL MENU DESPLEGABLE
+      $("#leer").click(function(){
+        $(".foto").slideToggle();
+      });
+    </script>
   </body>
 </html>
