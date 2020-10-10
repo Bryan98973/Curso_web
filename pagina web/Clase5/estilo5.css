@@ -9,7 +9,6 @@ body {
 .ancho {
   width: 1200px;
   margin: auto;
-  border: 1px red  solid;
 }
 #contenedor_arriba {
   display: flex;
