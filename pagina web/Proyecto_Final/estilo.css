@@ -21,7 +21,6 @@ header {
 .ancho {
   max-width: 1200px;
   margin: auto;
-  border: 1px red solid;
 }
 #nombre {
   color: white;
@@ -93,7 +92,6 @@ nav a {
   width: 100px;
 }
 .infopersonal {
-  border: 1px blue solid;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -177,12 +175,115 @@ nav a {
   border: 1px #ccc solid;
   text-align: center;
   padding: 30px;
-  width: 300px;
+  width: 305px;
   margin-bottom: 15px;
 }
-.datospersonales .redes a{
+.datospersonales .redes a {
   text-decoration: none;
   color: #333;
+}
+.calltoaction {
+  background-color: #333;
+  color: white;
+  padding: 30px 15px;
+}
+.texto h2 {
+  padding: 15px 0px;
+}
+.texto p {
+  padding-bottom: 15px;
+}
+#cont_call {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.portafolio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+.portafolio a {
+  opacity: 1;
+  transition: all;
+}
+.portafolio a:hover {
+  opacity: 0.5;
+}
+.portafolio figure {
+  max-width: 350px;
+  margin-bottom: 20px;
+}
+.portafolio figure img {
+  width: 100%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+}
+input {
+  border-radius: 5px;
+  border: 1px #999 solid;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+textarea {
+  border-radius: 5px;
+  border: 1px #999 solid;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  min-width: 200px;
+  resize: none;
+  font-family: "Montserrat", sans-serif;
+}
+footer {
+  padding: 15px;
+  background-color: #333;
+  color: white;
+}
+footer a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+footer a i {
+  color: #d43636;
+  font-size: 40px;
+}
+footer a p {
+  padding: 15px;
+}
+.localizacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+footer hr {
+  width: 95%;
+  height: 3px;
+  border: 0px;
+  background-color: #444;
+  margin: auto;
+}
+.redes_sociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon_footer i {
+  font-size: 30px;
+  margin-right: 20px;
 }
 @media screen and (max-width: 480px) {
   header {
@@ -204,7 +305,10 @@ nav a {
     width: 100%;
     border-bottom: 1px white dotted;
   }
-  figure {
+  .infopersonal figure {
+    display: none;
+  }
+  #arriba figure {
     display: none;
   }
   #arriba {
@@ -238,5 +342,35 @@ nav a {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+  }
+  #cont_call {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .texto p {
+    text-align: center;
+  }
+  .portafolio {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5px;
+  }
+  .localizacion {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  footer a {
+    margin-bottom: 15px;
+  }
+  .redes_sociales {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .icon_footer {
+    margin-bottom: 15px;
   }
 }
