@@ -12,7 +12,7 @@ body {
 }
 header {
   height: 700px;
-  background-image: url(imagenes/foto-slide1.jpg);
+  background-image: url(imagenes/development.jpg);
   background-size: cover; /* widthscreen  */
   background-repeat: no-repeat;
   background-position: center center;
@@ -63,6 +63,7 @@ nav {
   align-items: center;
 }
 nav a {
+  font-weight: bold;
   padding: 10px 15px;
   text-decoration: none;
   color: white;
@@ -97,6 +98,7 @@ nav a {
   align-items: center;
 }
 .infopersonal figure {
+  margin-top: 20px;
   max-width: 400px;
   border-radius: 5px;
   border: 1px #999 solid;
@@ -142,6 +144,11 @@ nav a {
   display: inline-block;
   text-decoration: none;
   margin-bottom: 10px;
+  transition: all 0.8s;
+}
+.btn_naranja:hover {
+  background-color: white;
+  color: #d43636;
 }
 .btn_blanco {
   border-radius: 60px;
@@ -152,6 +159,11 @@ nav a {
   display: inline-block;
   text-decoration: none;
   margin-bottom: 10px;
+  transition: all 0.5s;
+}
+.btn_blanco:hover {
+  background-color: #d43636;
+  color: white !important;
 }
 .gris {
   background-color: #f4f4f4;
@@ -208,7 +220,7 @@ nav a {
 }
 .portafolio a {
   opacity: 1;
-  transition: all;
+  transition: all 0.5s;
 }
 .portafolio a:hover {
   opacity: 0.5;
@@ -299,7 +311,7 @@ footer hr {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(226, 209, 121, 0.781);
   }
   nav a {
     width: 100%;
